@@ -553,7 +553,31 @@ mouse = [
 dgroups_key_binder = None
 dgroups_app_rules = []
 
+@hook.subscribe.client_new
+def assign_app_group(client):
+    d = {}
+    #########################################################
+    ################ assgin apps to groups ##################
+    #########################################################
+    d["1"] = ["vivaldi-stable", "Navigator", ]
+    d["2"] = ["subl3", "atom", ]
+    d["3"] = ["termite","urxvt", ]
+    d["4"] = ["org.gnome.meld", ]
+    d["5"] = ["", ]
+    d["6"] = ["", ]
+    d["7"] = ["VirtualBox Manager", "VirtualBox Machine", ]
+    d["8"] = ["thunar", "Thunar", ]
+    d["9"] = ["pragha", ]
+    d["0"] = ["discord", "telegram-desktop", ]
+    ##########################################################
+    wm_class = client.window.get_wm_class()[0]
 
+    for i in range(len(d)): 
+        if wm_class in list(d.values())[i]:
+            group = list(d.keys())[i]
+            client.togroup(group)
+            client.group.cmd_toscreen()
+    
 main = None
 
 @hook.subscribe.startup_once
@@ -602,6 +626,6 @@ floating_layout = layout.Floating(float_rules=[
 
 ],  fullscreen_border_width = 0, border_width = 0)
 auto_fullscreen = True
-focus_on_window_activation = "smart"
+focus_on_window_activation = "focus"
 
 wmname = "LG3D"
