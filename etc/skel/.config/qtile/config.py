@@ -559,16 +559,16 @@ def assign_app_group(client):
     #########################################################
     ################ assgin apps to groups ##################
     #########################################################
-    d["1"] = ["vivaldi-stable", "Navigator", ]
-    d["2"] = ["subl3", "atom", ]
-    d["3"] = ["termite","urxvt", ]
-    d["4"] = ["org.gnome.meld", ]
-    d["5"] = ["", ]
-    d["6"] = ["", ]
+    d["1"] = ["vivaldi-stable", "Navigator", "chromium", ]
+    d["2"] = ["subl3", "atom", "geany", ]
+    d["3"] = ["inkscape", ]
+    d["4"] = ["gimp", ]
+    d["5"] = ["org.gnome.meld", ]
+    d["6"] = ["vlc", ]
     d["7"] = ["VirtualBox Manager", "VirtualBox Machine", ]
     d["8"] = ["thunar", "Thunar", ]
-    d["9"] = ["pragha", ]
-    d["0"] = ["discord", "telegram-desktop", ]
+    d["9"] = ["evolution", "geary", ]
+    d["0"] = ["spotify", ]
     ##########################################################
     wm_class = client.window.get_wm_class()[0]
 
