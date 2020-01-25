@@ -19,11 +19,11 @@ super + F{11,12}
 # SUPER + ... KEYS
 #################################################################
 
-super + {e,w,c}
-    {atom,vivaldi-stable,conky-toggle}
+super + {e,c,h,m}
+    {atom,,conky-toggle,urxvt -e htop,pragha}
 
-super + {e,h,m,r,t,v,x}
-    {atom,urxvt -e htop,pragha,rofi-theme-selector,urxvt,pavucontrol,oblogout}
+super + {r,t,v,w,x}
+    {rofi-theme-selector,urxvt,pavucontrol,vivaldi-stable,oblogout}
 
 #Hide polybar
 super + y
