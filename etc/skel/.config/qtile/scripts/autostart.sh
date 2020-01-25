@@ -23,7 +23,11 @@ function run {
 #Some ways to set your wallpaper besides variety or nitrogen
 feh --bg-fill /usr/share/backgrounds/arcolinux/arco-wallpaper.jpg &
 #start the conky to learn the shortcuts
-(conky -c $HOME/.config/qtile/scripts/system-overview) &
+#(conky -c $HOME/.config/qtile/scripts/system-overview) &
+
+# Test implementation of sxhkd to replace native Qtile keybinding
+run sxhkd -c ~/.config/qtile/sxhkd/sxhkdrc &
+
 
 #starting utility applications at boot time
 run variety &
