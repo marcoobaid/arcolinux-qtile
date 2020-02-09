@@ -188,6 +188,7 @@ keys = [
     #Key([mod], "h", lazy.layout.left()),
     #Key([mod], "l", lazy.layout.right()),
 
+
 # RESIZE UP, DOWN, LEFT, RIGHT
     Key([mod, "control"], "l",
         lazy.layout.grow_right(),
@@ -254,11 +255,10 @@ keys = [
     #Key([mod, "shift"], "Up", lazy.layout.shuffle_up()),
     #Key([mod, "shift"], "Down", lazy.layout.shuffle_down()),
     #Key([mod, "shift"], "Left", lazy.layout.swap_left()),
+    #Key([mod, "shift"], "Right", lazy.layout.swap_right()),
 
 # TOGGLE FLOATING LAYOUT
-    #Key([mod, "shift"], "space", lazy.window.toggle_floating()),
-
-    ]
+    #Key([mod, "shift"], "space", lazy.window.toggle_floating()),]
 
 groups = []
 
@@ -619,6 +619,8 @@ follow_mouse_focus = True
 bring_front_click = False
 cursor_warp = False
 floating_layout = layout.Floating(float_rules=[
+    {'wmclass': 'Arcolinux-welcome-app.py'},
+    {'wmclass': 'Arcolinux-tweak-tool.py'},
     {'wmclass': 'confirm'},
     {'wmclass': 'dialog'},
     {'wmclass': 'download'},
