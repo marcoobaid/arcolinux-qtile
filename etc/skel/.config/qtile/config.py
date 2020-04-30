@@ -257,7 +257,9 @@ keys = [
     #Key([mod, "shift"], "Right", lazy.layout.swap_right()),
 
 # TOGGLE FLOATING LAYOUT
-    #Key([mod, "shift"], "space", lazy.window.toggle_floating()),]
+    #Key([mod, "shift"], "space", lazy.window.toggle_floating()),
+
+    ]
 
 groups = []
 
