@@ -513,4 +513,18 @@ super + alt + {h,j,k,l}
     qtile-cmd -o layout -f {flip_left,flip_down,flip_up,flip_right}
 
 
-#################################################################
+##################################
+## The RESIZE KEYS ARE RESERVED ##
+##  ~/.config/qtile/config.py   ##
+##      Lines 191 - 235         ##
+##################################
+## RESIZE UP, DOWN, LEFT, RIGHT ##
+#super + control + l
+#super + control + Right
+#super + control + h
+#super + control + Left
+#super + control + k
+#super + control + Up
+#super + control + j
+#super + control + Down
+##################################
