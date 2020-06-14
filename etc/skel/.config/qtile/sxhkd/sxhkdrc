@@ -160,9 +160,6 @@ ctrl + alt + Next
 ctrl + alt + Prior
     conky-rotate -p
 
-#Atom
-ctrl + alt + w
-     atom
 #File-Manager
 ctrl + alt + b
      thunar
@@ -336,6 +333,7 @@ ctrl + Print
 ctrl + shift + Print
      gnome-screenshot -i
 
+
 #################################################################
 #     FUNCTION KEYS
 #################################################################
@@ -344,6 +342,7 @@ ctrl + shift + Print
 F12
     xfce4-terminal --drop-down
 
+
 #################################################################
 #     MULTIMEDIA KEYS
 #################################################################
@@ -351,17 +350,14 @@ F12
 #Raises volume
 XF86AudioRaiseVolume
     amixer set Master 10%+
-    #amixer -q set Master 5%+ -> Qtile
 
 #Lowers volume
 XF86AudioLowerVolume
     amixer set Master 10%-
-    #amixer -q set Master 5%- -> Qtile
 
 #Mute
 XF86AudioMute
     amixer -D pulse set Master 1+ toggle
-    #amixer -q set Master toggle -> from Qtile
 
 #Playerctl works for Pragha, Spotify and others
 #Delete the line for playerctl if you want to use mpc
@@ -401,7 +397,7 @@ XF86MonBrightnessDown
 #        POLYBAR        #
 #########################
 
-# Qtile has its own bar 
+# Qtile has its own bar
 #Hide polybar
 #super + y
 #    polybar-msg cmd toggle
@@ -417,7 +413,7 @@ XF86MonBrightnessDown
 # CTRL + ALT KEYS
 #################################################################
 
-#Picom (a.k.a Compton) Toggle
+#Picom Toggle
 ctrl + alt + o
     ~/.config/qtile/scripts/picom-toggle.sh
 
@@ -459,7 +455,7 @@ super + space
 
 # Move focus to other monitor
 super + BackSpace
-    qtile -o cmd -f next_screen 
+    qtile -o cmd -f next_screen
 
 #################################################################
 # SUPER + SHIFT KEYS

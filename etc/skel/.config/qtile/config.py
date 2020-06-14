@@ -602,7 +602,7 @@ dgroups_app_rules = []
 #         if wm_class in list(d.values())[i]:
 #             group = list(d.keys())[i]
 #             client.togroup(group)
-#             client.group.cmd_toscreen()
+#             client.group.cmd_toscreen(toggle=False)
 
 # END
 # ASSIGN APPLICATIONS TO A SPECIFIC GROUPNAME
