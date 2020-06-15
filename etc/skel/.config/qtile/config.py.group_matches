@@ -314,7 +314,7 @@ for i in range(len(group_names)):
             layout=group_layouts[i].lower(),
             label=group_labels[i],
             matches=group_matches[i],
-	          exclusive=group_exclusives[i],
+	        exclusive=group_exclusives[i],
             persist=group_persists[i],
             init=group_inits[i],
             #####spawn=group_spawns,
