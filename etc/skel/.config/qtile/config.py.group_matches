@@ -318,7 +318,6 @@ for i in range(len(group_names)):
             persist=group_persists[i],
             init=group_inits[i],
             #####spawn=group_spawns,
-
         ))
 
 for i in groups:
