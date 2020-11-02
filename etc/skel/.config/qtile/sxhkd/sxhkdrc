@@ -8,11 +8,11 @@
 
 # Vivaldi
 super + F1
-    vivaldi-stable
+	vivaldi-stable
 
 # Atom
 super + F2
-    atom
+	atom
 
 #Inkscape
 super + F3
@@ -53,7 +53,6 @@ super + F11
 #Rofi
 super + F12
     rofi -show run
-
 
 #################################################################
 # SUPER + ... KEYS
@@ -106,7 +105,7 @@ super + Escape
 #Keyboard dependent
 #termite
 super + KP_Enter
-    termite
+	termite
 
 #################################################################
 # SUPER + SHIFT KEYS
@@ -114,30 +113,24 @@ super + KP_Enter
 
 #File-Manager
 super + shift + Return
-    thunar
+	thunar
 
 #Keyboard dependent
 #File-Manager
 #super + shift + KP_Enter
-#   thunar
+#	thunar
 
 #dmenu
 super + shift + d
-    dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'
+	dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'
 
 #reload sxhkd:
 super + shift + s
-    pkill -USR1 -x sxhkd
+	pkill -USR1 -x sxhkd
 
 #Keyboard dependent
 #super + shift + KP_Enter
-#   thunar
-
-
-
-#################################################################
-# CONTROL + ALT KEYS
-#################################################################
+#	thunar
 
 
 #################################################################
@@ -150,7 +143,7 @@ ctrl + alt + w
 
 #arcolinux-tweak-tool
 ctrl + alt + e
-    arcolinux-tweak-tool     
+    arcolinux-tweak-tool
 
 #conky-rotate
 ctrl + alt + Next
@@ -171,10 +164,6 @@ ctrl + alt + c
 #Chromium
 ctrl + alt + g
     chromium -no-default-browser-check
-
-#Evolution
-ctrl + alt + e
-     evolution
 
 #Firefox
 ctrl + alt + f
@@ -235,7 +224,6 @@ ctrl + alt + a
 #     termite
 
 
-
 #################################################################
 # ALT + ... KEYS
 #################################################################
@@ -281,7 +269,6 @@ alt + F3
     xfce4-appfinder
 
 
-
 #################################################################
 #VARIETY KEYS WITH PYWAL
 #################################################################
@@ -306,7 +293,6 @@ alt + shift + f
 alt + shift + u
     wal -i $(cat $HOME/.config/variety/wallpaper/wallpaper.jpg.txt)&
 
-
 #################################################################
 # CONTROL + SHIFT KEYS
 #################################################################
@@ -314,7 +300,6 @@ alt + shift + u
 #Xcfe4-TaskManager
 ctrl + shift + Escape
     xfce4-taskmanager
-
 
 
 #################################################################
@@ -392,7 +377,6 @@ XF86MonBrightnessUp
 XF86MonBrightnessDown
     xbacklight -dec 10
 
-
 #########################
 #        POLYBAR        #
 #########################
@@ -429,7 +413,7 @@ super + f
 super + n
     qtile-cmd -o layout -f normalize
 
-#kill Window
+#kill
 super + q
     qtile-cmd -o window -f kill
 

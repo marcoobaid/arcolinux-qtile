@@ -338,8 +338,6 @@ def init_colors():
 colors = init_colors()
 
 
-
-
 # WIDGETS FOR THE BAR
 
 def init_widgets_defaults():
